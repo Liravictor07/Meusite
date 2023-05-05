@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Amável</title>
+    <link rel="shortcut icon" href="img/icons8-vingadores-48.png">
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <header>
+        <div class="img">
+      <img src="img/Design sem nome (1).png">
+    </div>
+      <nav>
+        <div class="navbar">
+        <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Noticias/blog/noticia.html">Noticia</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+            <li><a href="../personagens/personagens.html">Personagens</a></li>
+            <li><a href="../Filmes/filme.html">Filmes</a></li>
+            <li><a href="../Videos/videos/Main.html">Videos</a></li>
+            <li><a href="../Pictures/pictures.html">Fotos</a></li>
+        </ul>
+    </div>
+      </nav>
+    </header>
+    <main>
+        <h1>Cadastre-se</h1>
+      <p>Preencha o formulário abaixo para se cadastrar:</p>
+      <form>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" minlength="8" required>
+        <label for="confirma-senha">Confirme a senha:</label>
+        <input type="password" id="confirma-senha" name="confirma-senha" minlength="8" required>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="14" max="99" required>
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+          <option value="">Selecione uma opção</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+        <label for="interesses">Interesses:</label>
+        <ul id="interesses">
+          <li><input type="checkbox" id="esportes" name="esportes"><label for="esportes">Automação</label></li>
+          <li><input type="checkbox" id="tecnologia" name="tecnologia"><label for="tecnologia">Tecnologia</label></li>
+          <li><input type="checkbox" id="viagens" name="viagens"><label for="viagens">Eletroeletrônica</label></li>
+          <li><input type="checkbox" id="comida" name="comida"><label for="comida">Portugol</label></li>
+        </ul>
+       <a href="../Home/index.html"> <input type="submit" value="Enviar"> </a>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

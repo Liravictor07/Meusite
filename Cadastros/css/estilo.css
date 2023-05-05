@@ -1,0 +1,185 @@
+/* Reset de estilos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar{
+    width: 3px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#1f1f1f, #580000)
+}
+  
+  /* Estilos para o corpo da página */
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #000000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img img{
+    width: 50%;
+  }
+  
+  .logo {
+    max-width: 100px;
+    margin-right: 16px;
+  }
+  
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+li a:hover{
+    background: white;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: rgb(6, 6, 6);
+}
+  /* Estilos para o conteúdo principal */
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #000000;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 16px;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  select {
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    transition: border-bottom 0.2s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    outline: none;
+    border-bottom-color: #ff3e3e;
+  }
+  
+  ul#interesses {
+    display: flex;
+    list-style: none;
+    margin-bottom: 16px;
+  }
+  
+  ul#interesses li + li {
+    margin-left: 16px;
+  }
+  
+  ul#interesses input[type="checkbox"] {
+    display: none;
+  }
+  
+  ul#interesses label {
+    font-size: 1rem;
+    color: #f4f4f4;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  ul#interesses label:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+  ul#interesses input[type="checkbox"]:checked + label:before {
+    border-color: #ff3e3e;
+    background-color: #ff3e3e;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff3e3e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 10px
+  }
+
+  input[type="submit"]:hover {
+    background-color: #d62e2e;
+    cursor: pointer;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  footer a:hover {
+    color: #ff3e3e;
+  }
+  
+  
+  

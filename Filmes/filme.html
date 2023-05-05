@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes - Amável</title>
+    <link rel="shortcut icon" href="img/icons8-vingadores-48.png">
+    <link rel="stylesheet" href="css/filmes.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="img/Design sem nome (1).png">
+        <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Noticias/blog/noticia.html">Noticia</a></li>
+            <li><a href="../personagens/personagens.html">Personagens</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+            <li><a href="../Videos/videos/Main.html">Vídeos</a></li>
+            <li><a href="../Pictures/pictures.html">Fotos</a></li>
+           
+        </ul>
+    </div>
+    <div class="container">
+        <div class="movie-card" style="background-image: url('img/ultimato.jfif');">
+            <div class="overlay"></div>
+            <div class="movie-info">
+                <h2 class="movie-title">Vingadores: Guerra Infinita</h2>
+                <p class="movie-description">Os Vingadores e seus aliados devem estar dispostos a sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que sua invasão de devastação e ruína dê um fim ao universo.</p>
+                <div class="movie-actions">
+                    <button class="button play-button">▶ Assistir</button>
+                    <a href="https://www.papodecinema.com.br/filmes/vingadores-ultimato/"><button class="button info-button">Mais informações</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card" style="background-image: url('img/Ronaldinho.jpg_large');">
+            <div class="overlay"></div>
+            <div class="movie-info">
+                <h2 class="movie-title">O Bruxo</h2>
+                <p class="movie-description">Podemos ver a magia em seu estado puro. Ele engana seus adversários em um instante com sua habilidade precisa, ele nasceu com um dom indescritível que foi aprimorado com muito treino e mentores especialistas na arte do 'dibre' como ele chama seus atributos de batalha. Ele distorce a realidade do seu rival com um simples movimento excecutado com maestria, seu raciocínio é muito á frente do comum.</p>
+                <div class="movie-actions">
+                    <button class="button play-button">▶ Assistir</button>
+                    <a href="https://www.facebook.com/SiteOmelete/photos/saiu-a-marvel-divulgou-a-capa-da-hq-onde-ronaldinho-ga%C3%BAcho-vira-o-mago-supremo-d/10158989665843018/"><button class="button info-button">Mais informações</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card" style="background-image: url('img/06.jpeg');">
+            <div class="overlay"></div>
+            <div class="movie-info">
+                <h2 class="movie-title">Os Professores</h2>
+                <p class="movie-description">O Senai hoje é composto por seu esquadrão de Vingadores, só que versão Senai Desenvolvimento de Sistemas, são eles: Hulkdisson, Mayara Maravilha e Ton Stark.</p>
+                <div class="movie-actions">
+                    <a href="#"><button class="button play-button">▶ Assistir</button></a>
+                    <a href="https://diadema.sp.senai.br/curso/85566/125/tecnico-em-desenvolvimento-de-sistemas"><button class="button info-button">Mais informações</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
+    <script>
+       const movieCards = document.querySelectorAll(".movie-card");
+
+movieCards.forEach((card) => {
+  const playButton = card.querySelector(".play-button");
+  const infoButton = card.querySelector(".info-button");
+
+  card.addEventListener("mouseover", () => {
+    card.classList.add("hover");
+  });
+
+  card.addEventListener("mouseout", () => {
+    card.classList.remove("hover");
+  });
+
+  playButton.addEventListener("click", () => {
+    const movieTitle = card.querySelector(".movie-title").textContent;
+    alert(`Iniciando a reprodução de ${movieTitle}...`);
+  });
+
+  infoButton.addEventListener("click", () => {
+    const movieTitle = card.querySelector(".movie-title").textContent;
+    const movieDescription = card.querySelector(".movie-description")
+      .textContent;
+    alert(`${movieTitle}\n\n${movieDescription}`);
+  });
+});
+
+
+
